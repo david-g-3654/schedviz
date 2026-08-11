@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "schedviz"
+version = "0.1.0"
+description = "A terminal timeline for all your scheduled jobs at once — cron, /etc/cron.d, systemd timers, and CI cron. Spot collisions before they hammer your disk."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "David" }]
+keywords = ["cron", "crontab", "systemd", "timer", "tui", "sysadmin", "schedule", "homelab"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "textual>=0.58",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+schedviz = "schedviz.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/david-g-3654/schedviz"
+Issues = "https://github.com/david-g-3654/schedviz/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["schedviz"]
+
+[tool.hatch.build.targets.sdist]
+# Keep the sdist lean: the demo GIF/PNG are big and only needed on GitHub/PyPI
+# pages (referenced by absolute URL), not inside the distribution.
+exclude = ["docs/", "/.github", "/.gitignore"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
