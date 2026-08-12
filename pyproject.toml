@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "schedviz"
-version = "0.1.0"
+version = "0.1.1"
 description = "A terminal timeline for all your scheduled jobs at once — cron, /etc/cron.d, systemd timers, and CI cron. Spot collisions before they hammer your disk."
 readme = "README.md"
 requires-python = ">=3.9"
@@ -37,7 +37,10 @@ schedviz = "schedviz.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/david-g-3654/schedviz"
+Repository = "https://github.com/david-g-3654/schedviz"
+Source = "https://github.com/david-g-3654/schedviz"
 Issues = "https://github.com/david-g-3654/schedviz/issues"
+Changelog = "https://github.com/david-g-3654/schedviz/releases"
 
 [tool.hatch.build.targets.wheel]
 packages = ["schedviz"]

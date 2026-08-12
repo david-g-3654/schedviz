@@ -9,7 +9,7 @@ from .models import Job, Source, Schedule
 from .schedule import Run, Collision, compute_runs, upcoming_runs, find_collisions
 from .explain import describe_job, describe_cron, humanize_delta, format_run
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
     "CronExpr", "CronParseError",
