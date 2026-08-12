@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/david-g-3654/schedviz/actions/workflows/ci.yml/badge.svg)](https://github.com/david-g-3654/schedviz/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/schedviz.svg)](https://pypi.org/project/schedviz/)
-[![Python versions](https://img.shields.io/pypi/pyversions/schedviz.svg)](https://pypi.org/project/schedviz/)
+[![Python versions](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://pypi.org/project/schedviz/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **crontab.guru for _all_ your jobs at once.** A terminal timeline that pulls in
